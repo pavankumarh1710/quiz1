@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1></h1>
+<br>
+
+
+<form method="POST" action="">
+    <br>
+    Enter mag1 <input type="text" name="mag1">
+    Enter mag2 <input type="text" name="mag2">
+
+    <br>
+    <input type="submit" name="show">
+</form>
+<div id="table-wrapper">
+    <div id="table-scroll">
+<table border="1">
+    {% for rows in data %}
+    <tr>
+        <td>{{ rows }}</td>
+   
+
+    </tr>
+    {% endfor %}
+
+</table>
+    </div>
+</div>
+<br>
+<a href="/">Home</a>
+</body>
+</html>
